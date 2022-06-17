@@ -1,4 +1,19 @@
-\documentclass[10pt]{ctexbook}
+\documentclass[10pt,UTF8]{ctexbook}
+
+% 音标
+\usepackage[T1]{tipa}
+
+% \usepackage{geometry}
+% \geometry{a4paper,left=3cm,right=3cm}
+
+
+\newcommand{\jkipa}[1]{/\,#1\,/}
+
+\setlength{\hoffset}{-45pt}
+\setlength{\textwidth}{390pt}
+
+
+
 
 \title{新概念英语精读笔记\footnote{开始与2022年06月17日}}
 \author{蒋坤}
@@ -6,10 +21,17 @@
 
 \begin{document}
 
+
+
 \maketitle
 
-\tableofcontents
+% \tableofcontents
 
+% 国际音标
+\include{parts/00-ipa.tex}
+
+
+% 新概念英语第一册: 英语初阶
 \part{First Things First}
 
 \include{parts/01-first-things-first/ch01-02.tex}
